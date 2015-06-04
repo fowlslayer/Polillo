@@ -90,50 +90,42 @@ ADDED from AndroidManifest.xml:39:9
 	android:name
 		ADDED from AndroidManifest.xml:41:13
 activity#com.example.classi.Web
-ADDED from AndroidManifest.xml:45:3
+ADDED from AndroidManifest.xml:52:3
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:45:84
+		ADDED from AndroidManifest.xml:52:84
 	android:configChanges
-		ADDED from AndroidManifest.xml:45:33
+		ADDED from AndroidManifest.xml:52:33
 	android:name
-		ADDED from AndroidManifest.xml:45:13
-activity#com.example.classi.Noctizia
-ADDED from AndroidManifest.xml:46:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:46:95
-	android:configChanges
-		ADDED from AndroidManifest.xml:46:44
-	android:name
-		ADDED from AndroidManifest.xml:46:19
+		ADDED from AndroidManifest.xml:52:13
 activity#com.example.classi.Cronaca
-ADDED from AndroidManifest.xml:47:9
+ADDED from AndroidManifest.xml:54:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:47:94
+		ADDED from AndroidManifest.xml:54:94
 	android:configChanges
-		ADDED from AndroidManifest.xml:47:43
+		ADDED from AndroidManifest.xml:54:43
 	android:name
-		ADDED from AndroidManifest.xml:47:19
+		ADDED from AndroidManifest.xml:54:19
 activity#com.example.classi.Comunicati
-ADDED from AndroidManifest.xml:48:9
+ADDED from AndroidManifest.xml:55:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:48:97
+		ADDED from AndroidManifest.xml:55:97
 	android:configChanges
-		ADDED from AndroidManifest.xml:48:46
+		ADDED from AndroidManifest.xml:55:46
 	android:name
-		ADDED from AndroidManifest.xml:48:19
+		ADDED from AndroidManifest.xml:55:19
 activity#com.example.classi.Sport
-ADDED from AndroidManifest.xml:49:9
+ADDED from AndroidManifest.xml:56:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:49:92
+		ADDED from AndroidManifest.xml:56:92
 	android:configChanges
-		ADDED from AndroidManifest.xml:49:41
+		ADDED from AndroidManifest.xml:56:41
 	android:name
-		ADDED from AndroidManifest.xml:49:19
+		ADDED from AndroidManifest.xml:56:19
 activity#com.example.classi.Politica
-ADDED from AndroidManifest.xml:50:9
+ADDED from AndroidManifest.xml:57:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:50:95
+		ADDED from AndroidManifest.xml:57:95
 	android:configChanges
-		ADDED from AndroidManifest.xml:50:44
+		ADDED from AndroidManifest.xml:57:44
 	android:name
-		ADDED from AndroidManifest.xml:50:19
+		ADDED from AndroidManifest.xml:57:19

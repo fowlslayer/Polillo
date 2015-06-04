@@ -43,12 +43,9 @@
             android:label="Registrazione"
             android:screenOrientation="portrait" >
         </activity>
+=======
         <activity
             android:name="com.example.classi.Web"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.example.classi.Noctizia"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity

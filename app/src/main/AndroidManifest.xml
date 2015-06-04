@@ -38,7 +38,7 @@
         </activity>
 		
 		<activity android:name=".Web"/>
-        <activity android:name=".Noticzia"/>
+        <activity android:name=".FragmentNotizia"/>
         <activity android:name=".Cronaca"/>
         <activity android:name=".Comunicati"/>
         <activity android:name=".Sport"/>

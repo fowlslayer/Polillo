@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment{
         notizie_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new Noticzia();
+                Fragment fragment = new FragmentNotizia();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
@@ -42,21 +42,23 @@ public class HomeFragment extends Fragment{
             }
         });
 
-        Button eventi_button = (Button) rootView.findViewById(R.id.buttonPolitica);
+        Button eventi_button = (Button) rootView.findViewById(R.id.buttonEventi);
         eventi_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent eventi_intent = new Intent(getActivity(), Login.class);
-                startActivity(eventi_intent);
+                Fragment fragment = new FragmentEventi();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
         });
 
-        Button locali_button = (Button) rootView.findViewById(R.id.buttonSport);
+        Button locali_button = (Button) rootView.findViewById(R.id.buttonLocaliNegozi);
         locali_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent locali_intent = new Intent(getActivity(), Login.class);
-                startActivity(locali_intent);
+                Fragment fragment = new LocaliNegozi();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
         });
 

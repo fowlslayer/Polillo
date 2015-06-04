@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Download/Polillo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="navigation_drawer_items_array">
+        <item>Menu</item>
+        <item>Favoriti</item>
+        <item>Profilo</item>
+        <item>Logout</item>
+    </string-array>
+    <!-- From: file:/D:/Download/Polillo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/Download/Polillo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">LissoneModerna</string>
+    <string name="cognome">Rossi</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="eMail">mrossi@example.com</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Mario</string>
+    <string name="password">Password</string>
+    <string name="telefono">555123456</string>
+    <string name="title_activity_aggiungi_annuncio">AggiungiAnnuncio</string>
+    <string name="title_activity_aggiungi_attivita">AggiungiAttivita</string>
+    <string name="title_activity_comune_page">Comune</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_mie_attivita">MieAttivita</string>
+    <string name="title_activity_miei_annunci">MieiAnnunci</string>
+    <string name="title_activity_sing_up">SingUpActivity</string>
+    <string name="title_activity_sing_up_fragment">SingUpFragment</string>
+    <!-- From: file:/D:/Download/Polillo/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="30dp"
+        android:layout_below="@+id/textNome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/cognome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rossi"
+        android:textSize="30dp"
+        android:layout_below="@+id/textCognome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/eMail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="mrossi@example.com"
+        android:textSize="30dp"
+        android:layout_below="@+id/textEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="555123456"
+        android:textSize="30dp"
+        android:layout_below="@+id/textNumTel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonAggiungiAttivitá"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi Attivitá"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/telefono"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nome:"
+        android:id="@+id/textNome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/buttonAggiungiAnnuncio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Aggiungi Annuncio di Vendita"
+        android:layout_below="@+id/buttonAggiungiAttivitá"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonMieAttivita"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Le mie Attivitá"
+        android:layout_below="@+id/buttonAggiungiAnnuncio"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonMieiAnnunci"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="I miei Annunci"
+        android:layout_below="@+id/buttonMieAttivita"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cognome:"
+        android:id="@+id/textCognome"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-mail:"
+        android:id="@+id/textEmail"
+        android:layout_below="@+id/cognome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Numero di telefono:"
+        android:id="@+id/textNumTel"
+        android:layout_below="@+id/eMail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout><!-- From: file:/D:/Download/Polillo/app/src/main/res/layout/fragment_profilo.xml -->

@@ -78,4 +78,4 @@
         android:layout_alignRight="@+id/titoloAnnuncio"
         android:layout_alignEnd="@+id/titoloAnnuncio" />
 
-</RelativeLayout><!-- From: file:/D:/Download/Polillo/app/src/main/res/layout/fragment_annuncio.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/fragment_annuncio.xml -->

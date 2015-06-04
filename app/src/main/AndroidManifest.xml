@@ -12,7 +12,8 @@
     <android:uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
@@ -22,8 +23,11 @@
         android:icon="@drawable/ic_launcher"
         android:label="LissoneModerna"
         android:logo="@android:color/transparent"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"
+    >
         <activity
+            android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"
             android:name=".MainActivity"
             android:label="LissoneModerna" >
             <intent-filter>
@@ -33,16 +37,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"
             android:name=".SignUpActivity"
             android:label="Registrazione" >
         </activity>
-		
-		<activity android:name=".Web"/>
-        <activity android:name=".FragmentNotizia"/>
-        <activity android:name=".Cronaca"/>
-        <activity android:name=".Comunicati"/>
-        <activity android:name=".Sport"/>
-        <activity android:name=".Politica"/>
+
+<<<<<<< Updated upstream
+
+		<activity android:name=".Web" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".FragmentNotizia" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".Cronaca" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".Comunicati" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".Sport" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".Politica" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
+>>>>>>> Stashed changes
 		
     </application>
 

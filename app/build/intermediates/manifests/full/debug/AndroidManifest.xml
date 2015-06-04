@@ -20,13 +20,17 @@
 
     <application
         android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
         android:icon="@drawable/ic_launcher"
         android:label="LissoneModerna"
         android:logo="@android:color/transparent"
+        android:screenOrientation="portrait"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.classi.MainActivity"
-            android:label="LissoneModerna" >
+            android:configChanges="keyboardHidden|orientation"
+            android:label="LissoneModerna"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,14 +39,34 @@
         </activity>
         <activity
             android:name="com.example.classi.SignUpActivity"
-            android:label="Registrazione" >
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Registrazione"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.example.classi.Web" />
-        <activity android:name="com.example.classi.Noticzia" />
-        <activity android:name="com.example.classi.Cronaca" />
-        <activity android:name="com.example.classi.Comunicati" />
-        <activity android:name="com.example.classi.Sport" />
-        <activity android:name="com.example.classi.Politica" />
+        <activity
+            android:name="com.example.classi.Web"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.classi.Noctizia"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.classi.Cronaca"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.classi.Comunicati"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.classi.Sport"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.classi.Politica"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -1,196 +1,86 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
 android:orientation="vertical"
 android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/logolissone"
-    >
+android:layout_height="match_parent">
 
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="55dp"
-    android:id="@+id/buttonGennaio"
-    android:textSize="30dp"
-    android:text="Gennaio"
-    android:background="@drawable/buttonshape"
-    android:gravity="center"
-    android:layout_alignParentTop="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mesi"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Febbraio"
-    android:id="@+id/buttonFebbraio"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-    android:layout_below="@+id/buttonGennaio"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Marzo"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-    android:id="@+id/buttonMarzo"
-
-    android:layout_below="@+id/buttonFebbraio"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Aprile"
-    android:id="@+id/buttonAprile"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonMarzo"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Maggio"
-    android:id="@+id/buttonMaggio"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonAprile"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Giugno"
-    android:id="@+id/buttonGiugno"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonMaggio"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Luglio"
-    android:id="@+id/buttonLuglio"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonGiugno"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Agosto"
-    android:id="@+id/buttonAgosto"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonLuglio"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Settembre"
-    android:id="@+id/buttonSettembre"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonAgosto"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
-
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Ottobre"
-    android:id="@+id/buttonOttobre"
-    android:textSize="30dp"
-    android:gravity="center"
-    android:background="@drawable/buttonshape"
-
-    android:layout_below="@+id/buttonSettembre"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:layout_alignParentBottom="true" />
-
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dicembre"
-        android:id="@+id/buttonDicembre"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:background="@drawable/buttonshape"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mercato dell&apos; Usato"
+        android:id="@+id/titoloAttivita"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp" />
 
-        android:layout_below="@+id/buttonNovembre"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="left|bottom" />
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Novembre"
-        android:id="@+id/buttonNovembre"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:background="@drawable/buttonshape"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Descrizione:"
+        android:id="@+id/textView22"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="30dp" />
 
-        android:layout_below="@+id/buttonOttobre"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="left|bottom" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mercatino delle pulci di Lissone, dove gli appassionati del antiquariato e del vintage si incontrano per scambiarsi oggetti all&apos;aria aperta."
+        android:id="@+id/descrizioneAttivita"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quando:"
+        android:id="@+id/textView23"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="l&apos;iniziativa sara&apos; a mesi alterni la seconda domenica del mese"
+        android:id="@+id/dataAttivita"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dove:"
+        android:id="@+id/textView24"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Il mercatino sara&apos; in piazza del mercato"
+        android:id="@+id/luogoAttivita"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="0dp" />
 
 
-</FrameLayout>
+</LinearLayout>

@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffffff"
-    android:clickable="true"
    >
 
 
@@ -26,7 +25,7 @@
         android:textSize="30dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentStart="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -65,13 +64,13 @@
         android:text="Locali &amp; Negozi"
         android:gravity="center_vertical|start"
         android:textSize="30dp"
+
+        android:background="@drawable/buttonshape"
         android:layout_below="@+id/buttonEventi"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-
-        android:background="@drawable/buttonshape"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -80,11 +79,78 @@
         android:text="Comune"
         android:gravity="center_vertical|start"
         android:textSize="30dp"
+        android:background="@drawable/buttonshape"
         android:layout_below="@+id/buttonLocaliNegozi"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@drawable/buttonshape"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_toRightOf="@+id/logoMain"
+        android:layout_toEndOf="@+id/logoMain"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_below="@+id/logoMain" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/buttonshape"
+        android:layout_above="@+id/buttonCronaca"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout2"
+        android:background="@drawable/icon_next"
+        android:layout_alignTop="@+id/buttonCronaca"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout3"
+        android:background="@drawable/icon_next"
+        android:layout_above="@+id/buttonEventi"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout4"
+        android:background="@drawable/icon_next"
+        android:layout_above="@+id/buttonLocaliNegozi"
+        android:layout_alignLeft="@+id/relativeLayout3"
+        android:layout_alignStart="@+id/relativeLayout3" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout5"
+        android:background="@drawable/icon_next"
+        android:layout_above="@+id/comune_button"
+        android:layout_alignLeft="@+id/relativeLayout4"
+        android:layout_alignStart="@+id/relativeLayout4" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/relativeLayout6"
+        android:background="@drawable/icon_next"
+        android:layout_alignBottom="@+id/comune_button"
+        android:layout_alignLeft="@+id/relativeLayout5"
+        android:layout_alignStart="@+id/relativeLayout5" />
+
 
 </RelativeLayout>

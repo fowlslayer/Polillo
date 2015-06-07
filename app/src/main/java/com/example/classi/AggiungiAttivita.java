@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class AggiungiAttivita extends Fragment {
 
-    private AttivitaList countries=new AttivitaList();
+    private ListaAttivita countries=new ListaAttivita();
     private ArrayAdapter<String> listviewAdapter;
     private ArrayAdapter<String> spinnerAdapter;
 

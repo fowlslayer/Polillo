@@ -55,10 +55,10 @@ public class MainActivity extends Activity {
         // list the drawer items
         ObjectDrawerItem[] drawerItem = new ObjectDrawerItem[4];
 
-        drawerItem[0] = new ObjectDrawerItem(R.drawable.ic_action_copy, "Menu");
+        drawerItem[0] = new ObjectDrawerItem(R.drawable.icon_menu, "Lissone Moderna");
         drawerItem[1] = new ObjectDrawerItem(R.drawable.icon_non_preferito, "Favoriti");
-        drawerItem[2] = new ObjectDrawerItem(R.drawable.ic_action_share, "Profilo");
-        drawerItem[3] = new ObjectDrawerItem(R.drawable.ic_action_share, "Logout");
+        drawerItem[2] = new ObjectDrawerItem(R.drawable.icon_user, "Profilo");
+        drawerItem[3] = new ObjectDrawerItem(R.drawable.icon_logout, "Logout");
 
 
         // Pass the folderData to our ListView adapter
@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
         mDrawerToggle = new ActionBarDrawerToggle(
                 this,                  /* host Activity */
                 mDrawerLayout,         /* DrawerLayout object */
-                R.drawable.menu,  /* nav drawer icon to replace 'Up' caret */
+                R.drawable.icon_user_menu,  /* nav drawer icon to replace 'Up' caret */
                 R.string.drawer_open,  /* "open drawer" description */
                 R.string.drawer_close  /* "close drawer" description */
         ) {
@@ -204,13 +204,13 @@ public class MainActivity extends Activity {
                     fragment.setArguments(bundle);
                 }
                 else
-                    fragment = new Login();
+                    fragment = new LoginFragment();
 
 
            }
            else
            {
-                fragment = new Login();
+                fragment = new LoginFragment();
            }
             break;
         case 3:
@@ -222,7 +222,7 @@ public class MainActivity extends Activity {
                 String loggato = loginDataBaseAdapter.getLoggato(userName);
                 if (loggato != null && loggato.equals("si")) {
                     loginDataBaseAdapter.setLoggato(userName, "no");
-                    fragment = new Login();
+                    fragment = new LoginFragment();
                     Toast.makeText(getApplicationContext(),"Sei stato sloggato", Toast.LENGTH_LONG).show();
                 }
             }

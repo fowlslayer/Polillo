@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/isFavorito"
+        android:icon="@drawable/icon_non_preferito"
+        android:title=""
+        android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/isUndo"
+        android:icon="@drawable/icon_undo"
+        android:title=""
+        android:showAsAction="ifRoom"/>
+</menu>

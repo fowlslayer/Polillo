@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class HomeFragment extends Fragment{
@@ -15,6 +16,7 @@ public class HomeFragment extends Fragment{
     public HomeFragment() {
     }
 
+    Fragment fragment;
 
     View view;
 
@@ -22,12 +24,14 @@ public class HomeFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
+        setCustomTitle("Lissone Moderna");
+
         //settaggio bottoni
         Button notizie_button = (Button) rootView.findViewById(R.id.buttonCronaca);
         notizie_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new FragmentNotizia();
+                fragment = new NotizieFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
@@ -37,7 +41,7 @@ public class HomeFragment extends Fragment{
         bacheca_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent bacheca_intent = new Intent(getActivity(), Login.class);
+                Intent bacheca_intent = new Intent(getActivity(), LoginFragment.class);
                 startActivity(bacheca_intent);
             }
         });
@@ -46,7 +50,7 @@ public class HomeFragment extends Fragment{
         eventi_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new FragmentEventi();
+                fragment = new EventiFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
@@ -56,9 +60,10 @@ public class HomeFragment extends Fragment{
         locali_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new LocaliNegozi();
+                fragment = new LocaliNegoziFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
             }
         });
 
@@ -66,13 +71,19 @@ public class HomeFragment extends Fragment{
         comune_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent comune_intent = new Intent(getActivity(), ComunePage.class);
-                startActivity(comune_intent);
+                fragment = new ComunePageFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
         });
 
-     return rootView;
+    return rootView;
+    }
 
+     public void setCustomTitle(String title)
+    {
+        TextView textViewTitle = (TextView) getActivity().findViewById(R.id.mytext);
+        textViewTitle.setText(title);
     }
 
 }

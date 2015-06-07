@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.classi.ComunePage">
+    tools:context="com.example.classi.ComunePageFragment"
+    android:background="#ffffffff">
 
     <ImageView
         android:layout_width="150dp"

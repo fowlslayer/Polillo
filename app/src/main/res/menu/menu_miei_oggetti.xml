@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.classi.AggiungiAnnuncio">
+
+    <item
+        android:id="@+id/action_modifica"
+        android:title="Modifica"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_elimina"
+        android:title="Elimina"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        />
+
+    <item android:id="@+id/isUndo"
+    android:icon="@drawable/icon_undo"
+    android:title=""
+    android:showAsAction="ifRoom"/>
+
+</menu>

@@ -83,7 +83,7 @@ public class ProfiloFragment extends Fragment {
         mieiAnnunci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new MieiAnnunci();
+                Fragment fragment = new MieiAnnunciFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }

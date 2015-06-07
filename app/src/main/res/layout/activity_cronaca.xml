@@ -13,7 +13,7 @@
             android:id="@+id/imageButtonPola"
             android:layout_width="0dp"
             android:layout_height="90dp"
-            android:background="@drawable/pola"
+            android:background="@drawable/notizia_pola"
             android:onClick="onButtonClick"
             android:layout_weight="1"
             android:visibility="visible"

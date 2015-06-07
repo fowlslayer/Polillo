@@ -20,6 +20,7 @@
     <string name="title_activity_sing_up">SingUpActivity</string>
     <string name="title_activity_sing_up_fragment">SingUpFragment</string>
 
+
     <string name="name">Mario</string>
     <string name="cognome">Rossi</string>
     <string name="eMail">mrossi@example.com</string>
@@ -29,5 +30,83 @@
     <string name="title_activity_mie_attivita">MieAttivita</string>
     <string name="title_activity_aggiungi_annuncio">AggiungiAnnuncio</string>
     <string name="title_activity_miei_annunci">MieiAnnunci</string>
+
+    <!-- Titoli delle attivita -->
+    <string name="titoloNegozioAbbigliamento">Motta Fashion</string>
+    <string name="titoloNegozioBar">Caffé Milano</string>
+    <string name="titoloNegozioDiscoteca">Noir</string>
+    <string name="titoloNegozioGelateria">Gaggero</string>
+    <string name="titoloNegozioMinimarket">Da Ivano</string>
+    <string name="titoloNegozioPizzeria">Roxy</string>
+    <string name="titoloNegozioPub">Il Santo Bevitore</string>
+    <string name="titoloNegozioRistorante">Beatrice</string>
+
+    <!-- descrizione delle attivita -->
+    <string name="descrizioneNegozioAbbigliamento">
+        Negozio di vestiti dai noti brand.
+    </string>
+    <string name="descrizioneNegozioBar">
+        Facciamo colazioni, pranzi e aperitivi.
+    </string>
+    <string name="descrizioneNegozioDiscoteca">
+        Il locale della brianza.
+    </string>
+    <string name="descrizioneNegozioGelateria">
+        Gelateria artigianale e pasticceria.
+    </string>
+    <string name="descrizioneNegozioMinimarket">
+        Abbiamo tutti i prodotti alimentari freschi e della zona.
+    </string>
+    <string name="descrizioneNegozioPizzeria">
+        Pizzeria e kebabberia aperta 365 giorni.
+    </string>
+    <string name="descrizioneNegozioPub">
+        Pub serale dove passare le serate tra musica e amici.
+    </string>
+    <string name="descrizioneNegozioRistorante">
+        Ristorante Pizzeria, oltre al menu offriamo il giropizza della casa
+    </string>
+
+    <!-- Orari delle attivita -->
+    <string name="orarioNegozioAbbigliamento">dalle 9.30 alle 19.30</string>
+    <string name="orarioNegozioBar">dalle 7.00 alle 24.00</string>
+    <string name="orarioNegozioDiscoteca">dalle 22.30 alle 03.30</string>
+    <string name="orarioNegozioGelateria">dalle 14.30 alle 22.30</string>
+    <string name="orarioNegozioMinimarket">dalle 9.30 alle 19.30</string>
+    <string name="orarioNegozioPizzeria">
+        dalle 11.30 alle 14.30 dalle 18.30 alle 22.00
+    </string>
+    <string name="orarioNegozioPub">dalle 20.00 alle 02.00</string>
+    <string name="orarioNegozioRistorante">dalle 19.00 alle 24.00</string>
+
+    <!-- Giorni delle attivita -->
+    <string name="giorniNegozioAbbigliamento">Lunedi - Sabato</string>
+    <string name="giorniNegozioBar">Martedi - Domenica</string>
+    <string name="giorniNegozioDiscoteca">Giovedi - Domenica</string>
+    <string name="giorniNegozioGelateria">Martedi - Domenica</string>
+    <string name="giorniNegozioMinimarket">Martedi - Sabato</string>
+    <string name="giorniNegozioPizzeria">Tutti i giorni</string>
+    <string name="giorniNegozioPub">Martedi - Domenica</string>
+    <string name="giorniNegozioRistorante">Martedi - Domenica</string>
+
+    <!-- Indirizzo delle attivita -->
+    <string name="indirizzoNegozioAbbigliamento">via XX settembre 8</string>
+    <string name="indirizzoNegozioBar">via Loreto 57</string>
+    <string name="indirizzoNegozioDiscoteca">Via Davide Guarenti, 17</string>
+    <string name="indirizzoNegozioGelateria">Viale Monza 15</string>
+    <string name="indirizzoNegozioMinimarket">via S. Giovanni, 7</string>
+    <string name="indirizzoNegozioPizzeria">via Verri, 27</string>
+    <string name="indirizzoNegozioPub">Via Tiziano Vecellio, 42</string>
+    <string name="indirizzoNegozioRistorante">Viale della Repubblica, 43</string>
+
+    <!-- Telefono delle attivita -->
+    <string name="telefonoNegozioAbbigliamento">039-24512312</string>
+    <string name="telefonoNegozioBar">039-2454291</string>
+    <string name="telefonoNegozioDiscoteca">335-434060</string>
+    <string name="telefonoNegozioGelateria">039-24512342</string>
+    <string name="telefonoNegozioMinimarket">039-2786645</string>
+    <string name="telefonoNegozioPizzeria">039-2911094</string>
+    <string name="telefonoNegozioPub">347-0953249</string>
+    <string name="telefonoNegozioRistorante">348-9822384</string>
 
 </resources>

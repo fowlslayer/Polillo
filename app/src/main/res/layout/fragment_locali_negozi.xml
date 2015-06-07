@@ -3,102 +3,70 @@
     android:layout_height="match_parent"
     tools:context="com.example.navigationdrawerexample.LocaliNegozi">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/logolissone"
-        >>
+        android:layout_height="wrap_content"
+        android:id="@+id/attivitaDaScegliere"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="149dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp">
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="182dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|top">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Disco e pub"
-            android:id="@+id/buttonDiscoPub"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:background="@drawable/buttonshape"
-            android:layout_above="@+id/buttonGelaterie"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonSceltaAttivita" />
+        </LinearLayout>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:id="@+id/buttonRistoranti"
-            android:textSize="30dp"
-            android:text="Ristoranti"
-            android:background="@drawable/buttonshape"
-            android:gravity="center"
-            android:layout_marginBottom="65dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="182dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|top">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:id="@+id/buttonPizzerie"
-            android:textSize="30dp"
-            android:text="Pizzerie"
-            android:background="@drawable/buttonshape"
-            android:gravity="center"
-            android:layout_above="@+id/buttonRistoranti"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/titoloSceltaAttivita"
+                android:textSize="23dp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:id="@+id/buttonAbbigliamento"
-            android:textSize="30dp"
-            android:text="Abbigliamento"
-            android:background="@drawable/buttonshape"
-            android:gravity="center"
-            android:layout_above="@+id/buttonPizzerie"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/descrizioneSceltaAttivita" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:id="@+id/buttonMinimarket"
-            android:textSize="30dp"
-            android:text="Minimarket"
-            android:background="@drawable/buttonshape"
-            android:gravity="center"
-            android:layout_above="@+id/buttonAbbigliamento"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/indirizzoSceltaAttivita" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:id="@+id/buttonGelaterie"
-            android:textSize="30dp"
-            android:text="Gelaterie"
-            android:background="@drawable/buttonshape"
-            android:gravity="center"
-            android:layout_above="@+id/buttonMinimarket"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/giorniSceltaAttivita" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:id="@+id/buttonBar"
-            android:textSize="30dp"
-            android:text="Bar"
-            android:background="@drawable/buttonshape"
-            android:gravity="center"
-            android:layout_above="@+id/buttonDiscoPub"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/orarioSceltaAttivita" />
+        </LinearLayout>
 
+    </FrameLayout>
 
 </FrameLayout>

@@ -13,7 +13,7 @@
             android:id="@+id/imageButtonPola"
             android:layout_width="0dp"
             android:layout_height="90dp"
-            android:background="@drawable/pola"
+            android:background="@drawable/notizia_pola"
             android:onClick="onButtonClick"
             android:layout_weight="1"
             android:visibility="visible"
@@ -53,4 +53,4 @@
         android:visibility="visible"
         android:contentDescription="@string/app_name"/>
     </LinearLayout>
-</LinearLayout><!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/activity_cronaca.xml -->
+</LinearLayout><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/activity_cronaca.xml -->

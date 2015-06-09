@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonDote"
-        android:background="@drawable/ic_dote"
-        android:layout_above="@+id/imageButtonExpo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <WebView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,18 +9,42 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButtonExpo"
-        android:background="@drawable/ic_expo"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imageButtonDote"
+            android:background="@drawable/ic_dote"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonExpo"
+            android:background="@drawable/ic_expo"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
 
 
-
-</RelativeLayout><!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/activity_comunicati.xml -->
+</LinearLayout><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/activity_comunicati.xml -->

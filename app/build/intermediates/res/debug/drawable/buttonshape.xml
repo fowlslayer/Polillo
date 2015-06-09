@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <solid
-        android:color="#99efffff"
-        />
-    <size
-        android:width="150dp"
-        android:height="55dp"
-        />
-    <stroke android:width="3dp" android:color="@android:color/black"/>
-</shape><!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/drawable/buttonshape.xml -->
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="#99ffffff"/>
+        </shape>
+    </item>
+
+    <item android:top="-2dp" android:right="-2dp" android:left="-2dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+                android:color="#000000" />
+        </shape>
+    </item>
+
+</layer-list><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/drawable/buttonshape.xml -->

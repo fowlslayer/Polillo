@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.classi.ComunePage">
+    tools:context="com.example.classi.ComunePageFragment"
+    android:background="#ffffffff">
 
     <ImageView
         android:layout_width="150dp"
@@ -88,4 +89,4 @@
         android:layout_toEndOf="@+id/textView4" />
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/fragment_comune.xml -->
+<!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/fragment_comune.xml -->

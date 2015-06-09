@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.classi.SignUpActivity"
+            android:name="com.example.classi.RegistrazioneFragment"
             android:configChanges="keyboardHidden|orientation"
             android:label="Registrazione"
             android:screenOrientation="portrait" >
@@ -61,7 +61,7 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.classi.Politica"
+            android:name="com.example.classi.News"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
     </application>

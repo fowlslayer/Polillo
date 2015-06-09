@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Riempi tutti i campi per aggiungere un annuncio:"
+            android:text="Riempi tutti i campi per salvare un annuncio:"
             android:id="@+id/textView8"
             android:textSize="18dp"
             android:layout_alignParentLeft="true"
@@ -33,12 +33,13 @@
             android:textSize="25dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView8" />
+            android:layout_below="@+id/textView8"
+            android:singleLine="true"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aggiungi Annuncio"
+            android:text="Salva Annuncio"
             android:id="@+id/btnAggiungiAnnuncio"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
@@ -51,7 +52,8 @@
             android:textSize="25dp"
             android:layout_below="@+id/titoloAnnuncio"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:singleLine="true"/>
 
         <EditText
             android:id="@+id/textView11"
@@ -62,7 +64,8 @@
             android:layout_above="@+id/btnAggiungiAnnuncio"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="25dp" />
+            android:layout_marginBottom="25dp"
+            android:singleLine="true"/>
 
         <EditText
             android:id="@+id/textView10"
@@ -72,9 +75,10 @@
             android:textSize="25dp"
             android:layout_above="@+id/textView11"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"/>
 
     </RelativeLayout>
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/fragment_aggiungi_annuncio.xml -->
+<!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/fragment_aggiungi_annuncio.xml -->

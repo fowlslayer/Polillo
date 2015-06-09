@@ -5,10 +5,42 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0"
         android:orientation="horizontal" >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ferrari"
+            android:background="@drawable/ferrari"
+            android:onClick="onButtonClick"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
 
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/gp"
+            android:background="@drawable/gp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/activity_sport.xml -->
+</LinearLayout><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/activity_sport.xml -->

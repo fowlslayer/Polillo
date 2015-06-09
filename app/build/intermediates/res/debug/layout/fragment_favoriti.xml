@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
-            android:background="@drawable/negozio"
+            android:background="@drawable/negozio_abbigliamento"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
@@ -114,4 +114,4 @@
     </LinearLayout>
 
 </LinearLayout>
-<!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/fragment_favoriti.xml -->
+<!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/fragment_favoriti.xml -->

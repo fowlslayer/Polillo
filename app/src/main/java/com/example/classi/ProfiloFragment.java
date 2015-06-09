@@ -55,7 +55,7 @@ public class ProfiloFragment extends Fragment {
             public void onClick(View view) {
                 Fragment fragment = new AggiungiAttivita();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 
@@ -65,7 +65,7 @@ public class ProfiloFragment extends Fragment {
             public void onClick(View view) {
                 Fragment fragment = new MieAttivitaFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 
@@ -75,7 +75,7 @@ public class ProfiloFragment extends Fragment {
             public void onClick(View view) {
                 Fragment fragment = new AggiungiAnnuncio();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 
@@ -85,7 +85,7 @@ public class ProfiloFragment extends Fragment {
             public void onClick(View view) {
                 Fragment fragment = new MieiAnnunciFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 

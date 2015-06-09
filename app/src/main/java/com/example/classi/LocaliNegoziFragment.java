@@ -222,7 +222,7 @@ public class LocaliNegoziFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         FragmentManager fragmentManager = getFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                     }
                 });
             }
@@ -250,7 +250,7 @@ public class LocaliNegoziFragment extends Fragment {
             case R.id.isUndo:
                 Fragment fragment = new HomeFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
 
                 return super.onOptionsItemSelected(item);
         }

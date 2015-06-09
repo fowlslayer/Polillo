@@ -55,7 +55,7 @@ public class NegozioDiscotecaFragment extends Fragment {
             case R.id.isUndo:
                 Fragment fragment = new LocaliNegoziFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
 
 
                 return super.onOptionsItemSelected(item);

@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment{
             public void onClick(View view) {
                 fragment = new NotizieFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 
@@ -43,7 +43,7 @@ public class HomeFragment extends Fragment{
             public void onClick(View view) {
                 fragment = new BachecaVenditaFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 
@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment{
             public void onClick(View view) {
                 fragment = new EventiFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 
@@ -63,7 +63,7 @@ public class HomeFragment extends Fragment{
             public void onClick(View view) {
                 fragment = new LocaliNegoziFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
 
             }
         });
@@ -74,7 +74,7 @@ public class HomeFragment extends Fragment{
             public void onClick(View view) {
                 fragment = new ComunePageFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 

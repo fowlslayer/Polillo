@@ -33,7 +33,7 @@ public class FavoritiFragment extends Fragment{
             public void onClick(View view) {
                 Fragment fragment = new FavoritiGelateriaFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
               }
         });
 
@@ -44,7 +44,7 @@ public class FavoritiFragment extends Fragment{
             public void onClick(View view) {
                 Fragment fragment = new FavoritiBarFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 

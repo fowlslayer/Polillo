@@ -45,7 +45,7 @@ public class MyAnnuncioGameboyFragment extends Fragment{
             case R.id.isUndo:
                 Fragment fragment = new MieiAnnunciFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                 break;
 
             case R.id.action_modifica:
@@ -60,7 +60,7 @@ public class MyAnnuncioGameboyFragment extends Fragment{
                     public void onClick(View view) {
                         Fragment fragment = new AggiungiAnnuncio();
                         FragmentManager fragmentManager = getFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                         dialogModifica.dismiss();
                     }
                 });
@@ -89,7 +89,7 @@ public class MyAnnuncioGameboyFragment extends Fragment{
                         Toast.makeText(getActivity(), "Annuncio' eliminato", Toast.LENGTH_LONG).show();
                         Fragment fragment = new MieiAnnunciFragment();
                         FragmentManager fragmentManager = getFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                         dialogElimina.dismiss();
                     }
                 });

@@ -21,7 +21,7 @@ public class AggiungiAnnuncio extends Fragment {
             public void onClick(View view) {
                 Fragment fragment = new MieiAnnunciFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
         });
 

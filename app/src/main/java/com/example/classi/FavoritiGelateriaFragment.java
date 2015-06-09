@@ -44,7 +44,7 @@ public class FavoritiGelateriaFragment extends Fragment {
             case R.id.isUndo:
                 Fragment fragment = new FavoritiFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                 break;
             case R.id.isFavorito:
                 if (count == 0) {

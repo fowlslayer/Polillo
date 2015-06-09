@@ -16,7 +16,7 @@
             android:layout_height="150dp"
             android:layout_weight="1"
             android:id="@+id/sonica"
-            android:background="@drawable/sonica"
+            android:background="@drawable/annuncio_divano"
             />
 
     </LinearLayout>
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:background="@drawable/jazz"
+            android:background="@drawable/annuncio_divano"
             android:id="@+id/jazz"/>
 
     </LinearLayout>

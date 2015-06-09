@@ -45,7 +45,7 @@ public class MyAttivitaAbbigliamentoFragment extends Fragment{
             case R.id.isUndo:
                 Fragment fragment = new MieAttivitaFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                 break;
             case R.id.action_modifica:
                 final Dialog dialogModifica = new Dialog(getActivity());
@@ -61,7 +61,7 @@ public class MyAttivitaAbbigliamentoFragment extends Fragment{
                     public void onClick(View view) {
                         Fragment fragment = new AggiungiAttivita();
                         FragmentManager fragmentManager = getFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                         dialogModifica.dismiss();
                     }
                 });
@@ -90,7 +90,7 @@ public class MyAttivitaAbbigliamentoFragment extends Fragment{
                         Toast.makeText(getActivity(), "Annuncio' eliminato", Toast.LENGTH_LONG).show();
                         Fragment fragment = new MieAttivitaFragment();
                         FragmentManager fragmentManager = getFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                         dialogElimina.dismiss();
                     }
                 });

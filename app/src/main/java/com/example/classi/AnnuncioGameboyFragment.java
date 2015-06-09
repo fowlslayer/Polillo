@@ -45,7 +45,7 @@ public class AnnuncioGameboyFragment extends Fragment{
             case R.id.isUndo:
                 Fragment fragment = new BachecaVenditaFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                 break;
         }
         return super.onOptionsItemSelected(item);

@@ -29,7 +29,7 @@ public class MieAttivitaFragment extends Fragment {
             public void onClick(View view) {
                Fragment fragment = new MyAttivitaAbbigliamentoFragment();
                FragmentManager fragmentManager = getFragmentManager();
-               fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+               fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                //Intent logIn = new Intent(getActivity(), AttivitaActivity.class);
 
                //startActivity(logIn);

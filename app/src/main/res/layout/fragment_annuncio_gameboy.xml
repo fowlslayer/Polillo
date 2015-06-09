@@ -11,11 +11,12 @@
             android:id="@+id/titoloAnnuncio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="GAME BOY color"
+            android:textSize="20dp"
+            android:text="Descrizione:"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:textColor="#5426184e" />
 
     <TextView
             android:id="@+id/descrizione"
@@ -25,8 +26,7 @@
         android:text="oggetto usato ma in perfette condizioni"
         android:layout_below="@+id/titoloAnnuncio"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:layout_alignParentStart="true" />
 
         <TextView
             android:id="@+id/textView11"
@@ -34,10 +34,9 @@
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:text="334-1234567"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView14"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="30dp" />
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:id="@+id/textView10"
@@ -54,10 +53,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:background="@drawable/gameboy"
+        android:background="@drawable/annuncio_gameboy"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="280dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Prezzo:"
+        android:textColor="#5426184e"
+        android:layout_below="@+id/descrizione"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Telefono:"
+        android:textColor="#5426184e"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

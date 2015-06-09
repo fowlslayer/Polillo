@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/unAttivita"
-            android:background="@drawable/negozio_abbigliamento" />
+            android:background="@drawable/negozio" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,4 +63,4 @@
     </LinearLayout>
 
 </LinearLayout>
-<!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/fragment_mie_attivita.xml -->
+<!-- From: file:/C:/Users/Easlay/AndroidStudioProjects/Polillo/app/src/main/res/layout/fragment_mie_attivita.xml -->

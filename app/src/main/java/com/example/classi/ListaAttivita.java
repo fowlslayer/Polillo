@@ -15,6 +15,7 @@ public class ListaAttivita {
         list=new LinkedHashMap<String, ArrayList<String>>();
         ArrayList<String> cities=new ArrayList<String>();
 
+        list.put("Scegli tipologia:", cities);
         list.put("Bar", cities);
         list.put("Disco e Pub", cities);
         list.put("Gelateria", cities);

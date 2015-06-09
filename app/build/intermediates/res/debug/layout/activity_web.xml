@@ -8,4 +8,4 @@
         android:layout_height="wrap_content"
         android:id="@+id/webbing"
         android:layout_gravity="center_horizontal" />
-</LinearLayout><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/activity_web.xml -->
+</LinearLayout><!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/layout/activity_web.xml -->

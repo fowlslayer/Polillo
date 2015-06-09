@@ -26,7 +26,8 @@
             <Button
                 android:layout_width="165dp"
                 android:layout_height="match_parent"
-                android:id="@+id/buttonSceltaAttivita" />
+                android:id="@+id/buttonSceltaAttivita"
+                android:background="#00ffffff" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,4 +71,4 @@
     </FrameLayout>
 
 </FrameLayout>
-<!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/fragment_locali_negozi.xml -->
+<!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/layout/fragment_locali_negozi.xml -->

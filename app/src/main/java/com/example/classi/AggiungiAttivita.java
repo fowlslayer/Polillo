@@ -2,6 +2,7 @@ package com.example.classi;
 
 
 import android.app.FragmentManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AggiungiAttivita extends Fragment {
@@ -26,13 +28,21 @@ public class AggiungiAttivita extends Fragment {
 
         Button aggiungiAttivita =(Button)rootView.findViewById(R.id.aggiungiAttivita);
 
-        aggiungiAttivita.setOnClickListener(new View.OnClickListener() {
+            aggiungiAttivita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new MieAttivitaFragment();
-                FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-                Toast.makeText(getActivity(), "Attivita' salvata correttamente", Toast.LENGTH_LONG).show();
+                Spinner sp = (Spinner) getActivity().findViewById(R.id.countries);
+                String attivitaSelezionata = sp.getSelectedItem().toString();
+                if(!attivitaSelezionata.equals("Scegli tipologia:"))
+                {
+                    Fragment fragment = new MieAttivitaFragment();
+                    FragmentManager fragmentManager = getFragmentManager();
+                    fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+                    Toast.makeText(getActivity(), "Attivita' salvata correttamente", Toast.LENGTH_LONG).show();
+                }
+                else
+                    Toast.makeText(getActivity(), "Seleziona una" +
+                            " tipologia", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -44,14 +54,21 @@ public class AggiungiAttivita extends Fragment {
         spinnerAdapter.addAll(countries.getCountries());
         Spinner sp=(Spinner) rootView.findViewById(R.id.countries);
         sp.setAdapter(spinnerAdapter);
+
+
+
+
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> arg0, View arg1,
                                        int arg2, long arg3) {
-/*                TextView txt = (TextView) arg1.findViewById(R.id.rowtext);
-                String s = txt.getText().toString();
-                updateCities(s);*/
+              TextView txt = (TextView) arg0.findViewById(R.id.rowtext);
+              String s = txt.getText().toString();
+                if(s.equals("Scegli tipologia:"))
+                {
+                    txt.setTextColor(Color.GRAY);
+                }
             }
 
             @Override

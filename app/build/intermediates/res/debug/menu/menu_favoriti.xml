@@ -4,4 +4,10 @@
         android:icon="@drawable/icon_preferito"
         android:title=""
         android:showAsAction="ifRoom"/>
-</menu><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/menu/menu_favoriti.xml -->
+
+    <item android:id="@+id/isUndo"
+        android:icon="@drawable/icon_undo"
+        android:title=""
+        android:showAsAction="ifRoom"/>
+
+</menu><!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/menu/menu_favoriti.xml -->

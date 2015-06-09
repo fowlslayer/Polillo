@@ -15,7 +15,7 @@ import android.widget.Button;
  */
 public class FavoritiFragment extends Fragment{
 
-    Button favorGel;
+    Button favorGel, favorBar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,6 +35,17 @@ public class FavoritiFragment extends Fragment{
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
               }
+        });
+
+        favorBar = (Button) rootView.findViewById(R.id.buttonFavoritoBar);
+
+        favorBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FavoritiBarFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+            }
         });
 
         return rootView;

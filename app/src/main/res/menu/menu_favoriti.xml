@@ -4,4 +4,10 @@
         android:icon="@drawable/icon_preferito"
         android:title=""
         android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/isUndo"
+        android:icon="@drawable/icon_undo"
+        android:title=""
+        android:showAsAction="ifRoom"/>
+
 </menu>

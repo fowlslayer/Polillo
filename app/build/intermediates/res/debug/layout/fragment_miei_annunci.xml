@@ -17,7 +17,7 @@
             android:layout_width="198dp"
             android:layout_height="match_parent"
             android:id="@+id/unAnnuncio"
-            android:background="@drawable/gameboy" />
+            android:background="@drawable/annuncio_gameboy" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="25 euro"
+            android:text="Giuseppe"
             android:id="@+id/textView10" />
 
         <TextView
@@ -62,4 +62,4 @@
             android:id="@+id/textView12" />
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/layout/fragment_miei_annunci.xml -->
+</LinearLayout><!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/layout/fragment_miei_annunci.xml -->

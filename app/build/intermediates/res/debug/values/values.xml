@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="navigation_drawer_items_array">
         <item>Menu</item>
@@ -8,11 +8,11 @@
         <item>Profilo</item>
         <item>Logout</item>
     </string-array>
-    <!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">LissoneModerna</string>
@@ -52,6 +52,7 @@
     <string name="giorniNegozioPizzeria">Tutti i giorni</string>
     <string name="giorniNegozioPub">Martedi - Domenica</string>
     <string name="giorniNegozioRistorante">Martedi - Domenica</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="indirizzoNegozioAbbigliamento">via XX settembre 8</string>
     <string name="indirizzoNegozioBar">via Loreto 57</string>
@@ -98,7 +99,7 @@
     <string name="titoloNegozioPizzeria">Roxy</string>
     <string name="titoloNegozioPub">Il Santo Bevitore</string>
     <string name="titoloNegozioRistorante">Beatrice</string>
-    <!-- From: file:/C:/AndroidStudio/Polillo/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Università/eclipse/workspace/Polillo/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

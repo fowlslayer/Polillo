@@ -10,27 +10,31 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="168dp"
-        android:layout_height="302dp"
+        android:layout_height="345dp"
         android:weightSum="1">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="151dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:id="@+id/buttonFavoritoGelateria"
-            android:background="@drawable/negozio_gelateria" />
+            android:background="@drawable/negozio_gelateria"
+            android:gravity="top" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:background="@drawable/negozio_abbigliamento"
-            android:layout_gravity="center_horizontal" />
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/buttonFavoritoBar"
+            android:background="@drawable/negozio_bar"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_marginTop="30dp" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="302dp">
+        android:layout_width="198dp"
+        android:layout_height="350dp"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,45 +74,46 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_width="198dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="motta fashion"
+                android:text="Motta Fashion"
                 android:id="@+id/textView17"
                 android:textSize="23dp"
-                android:layout_marginTop="18dp" />
+                android:layout_marginTop="0dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="negozio di vestiti di noti brand"
+                android:text="@string/descrizioneNegozioBar"
                 android:id="@+id/textView18" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="via XX settembre 8"
+                android:text="@string/indirizzoNegozioBar"
                 android:id="@+id/textView19" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="da Lunedi a Sabato:"
+                android:text="@string/giorniNegozioBar"
                 android:id="@+id/textView20" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="9.30-18.30"
+                android:text="@string/orarioNegozioBar"
                 android:id="@+id/textView21" />
         </LinearLayout>
     </LinearLayout>

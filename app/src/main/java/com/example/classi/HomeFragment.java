@@ -41,8 +41,9 @@ public class HomeFragment extends Fragment{
         bacheca_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent bacheca_intent = new Intent(getActivity(), LoginFragment.class);
-                startActivity(bacheca_intent);
+                fragment = new BachecaVenditaFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
         });
 

@@ -12,16 +12,17 @@
         android:hint="Nome Attivitá"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="25dp"
         android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="25dp" />
+        android:layout_marginTop="52dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Riempi tutti i campi per aggiungere un attivita&apos;"
+        android:text="Riempi tutti i campi per aggiungere un attivita&apos;:"
         android:id="@+id/textView8"
         android:textSize="18dp"
         android:layout_alignParentLeft="true"
@@ -31,9 +32,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/countries"
-        android:layout_below="@+id/editText3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2" />
 
 
     <EditText
@@ -42,16 +43,6 @@
         android:layout_height="wrap_content"
         android:hint="Partita IVA"
         android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="25dp" />
-
-    <TextView
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Scegli la tipologia:"
-        android:layout_below="@+id/editText2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="25dp" />

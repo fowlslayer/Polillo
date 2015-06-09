@@ -26,7 +26,8 @@
             <Button
                 android:layout_width="165dp"
                 android:layout_height="match_parent"
-                android:id="@+id/buttonSceltaAttivita" />
+                android:id="@+id/buttonSceltaAttivita"
+                android:background="#00ffffff" />
         </LinearLayout>
 
         <LinearLayout

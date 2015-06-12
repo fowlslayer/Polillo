@@ -27,9 +27,12 @@ public class MainActivity extends Activity {
 
     private ActionBarDrawerToggle mDrawerToggle;
 
+
     // nav drawer title
     private CharSequence mDrawerTitle;
- 
+
+    int n = 0;
+
     // used to store app title
     private CharSequence mTitle;
     
@@ -39,7 +42,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         //centra il titolo nella action bar
-
         getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getActionBar().setCustomView(R.layout.action_bar);
 
@@ -110,7 +112,7 @@ public class MainActivity extends Activity {
             selectItem(0);
         }
 
-        int n = 0;
+
         Bundle extras = getIntent().getExtras();
         if(extras !=null && n==0)
         {
@@ -170,7 +172,24 @@ public class MainActivity extends Activity {
         
         switch (position) {
         case 0:
-            fragment = new HomeFragment();
+            if(extras !=null)
+            {
+                String userName = extras.getString("Username");
+                Bundle bundle = new Bundle();
+                bundle.putString("userName", userName);
+                String loggato = loginDataBaseAdapter.getLoggato(userName);
+                if(loggato!=null && loggato.equals("si"))
+                {
+                    fragment = new HomeFragment();
+                    fragment.setArguments(bundle);
+                }
+                else
+                    fragment = new HomeFragment();
+            }
+            else
+            {
+                fragment = new HomeFragment();
+            }
             break;
         case 1:
             if(extras !=null)
@@ -205,8 +224,6 @@ public class MainActivity extends Activity {
                 }
                 else
                     fragment = new LoginFragment();
-
-
            }
            else
            {
@@ -222,7 +239,7 @@ public class MainActivity extends Activity {
                 String loggato = loginDataBaseAdapter.getLoggato(userName);
                 if (loggato != null && loggato.equals("si")) {
                     loginDataBaseAdapter.setLoggato(userName, "no");
-                    fragment = new LoginFragment();
+                    fragment = new HomeFragment();
                     Toast.makeText(getApplicationContext(),"Sei stato sloggato", Toast.LENGTH_LONG).show();
                 }
             }

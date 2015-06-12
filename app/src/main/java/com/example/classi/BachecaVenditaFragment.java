@@ -19,7 +19,7 @@ public class BachecaVenditaFragment extends Fragment {
 
     Fragment fragment;
 
-    Button btnChitarra, btnDivano, btnMobile;
+    Button btnChitarra, btnDivano, btnMobile,btnPlaystation;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,6 +58,15 @@ public class BachecaVenditaFragment extends Fragment {
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("tag").commit();
             }
         });
+        btnPlaystation = (Button) rootView.findViewById(R.id.buttonOggettoPlaystation);
+        btnPlaystation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragment = new AnnuncioPlaystationFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("tag").commit();
+            }
+        });
         return rootView;
     }
 
@@ -76,7 +85,7 @@ public class BachecaVenditaFragment extends Fragment {
 
         switch (item.getItemId()) {
             case R.id.isUndo:
-                Fragment fragment = new BachecaVenditaFragment();
+                Fragment fragment = new HomeFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
                 break;

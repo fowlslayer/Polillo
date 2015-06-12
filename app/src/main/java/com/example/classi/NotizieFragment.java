@@ -2,7 +2,6 @@ package com.example.classi;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -16,6 +15,8 @@ import android.widget.TextView;
 
 public class NotizieFragment extends Fragment{
 
+    Fragment fragment =null;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_notizie, container, false);
@@ -24,16 +25,19 @@ public class NotizieFragment extends Fragment{
 
         setHasOptionsMenu(true);
 
-        final Button cronaca = (Button) rootView.findViewById(R.id.buttonCronaca);
+
+        final Button cronaca = (Button) rootView.findViewById(R.id.buttonNewsCronaca);
         cronaca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cronaca_intent = new Intent(getActivity(), Cronaca.class);
-                startActivity(cronaca_intent);
+                fragment = new CronacaFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("tag").commit();
+
             }
         });
 
-        final Button comunicati = (Button) rootView.findViewById(R.id.buttonComunicati);
+/*        final Button comunicati = (Button) rootView.findViewById(R.id.buttonComunicati);
         comunicati.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +55,7 @@ public class NotizieFragment extends Fragment{
             }
         });
 
+*/
      return rootView;
     }
 
@@ -70,7 +75,7 @@ public class NotizieFragment extends Fragment{
             case R.id.isUndo:
                 Fragment fragment = new HomeFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
                 return super.onOptionsItemSelected(item);
         }

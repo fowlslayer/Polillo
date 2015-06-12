@@ -1,20 +1,24 @@
 package com.example.classi;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.ImageButton;
+import android.view.ViewGroup;
 
 
 public class Cronaca extends Activity {
+
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cronaca);
+        setContentView(R.layout.fragment_cronaca);
     }
 
-    public void onButtonClick(View v) {
+/*    public void onButtonClick(View v) {
+
         Intent c = new Intent(Cronaca.this, Web.class);
 
 
@@ -29,6 +33,6 @@ public class Cronaca extends Activity {
                 c.putExtra("ur", "http://www.ilcittadinomb.it/stories/Cronaca/strage-al-museo-del-bardo-di-tunisi-uno-dei-ricercati-arrestato-nel-milanese_1121720_11/");
                 break;
         }
-    }
+    }*/
 }
 

@@ -2,6 +2,7 @@ package com.example.classi;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -21,7 +22,7 @@ public class LocaliNegoziFragment extends Fragment {
     private ArrayAdapter<String> listviewAdapter;
     private ArrayAdapter<String> spinnerAdapter;
     Button imageButton;
-    Fragment fragment;
+    Fragment fragment = null;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -49,6 +50,30 @@ public class LocaliNegoziFragment extends Fragment {
                                        int arg2, long arg3) {
                 Spinner sp=(Spinner) getActivity().findViewById(R.id.attivitaDaScegliere);
                 String attivitaSelezionata = sp.getSelectedItem().toString();
+
+                if(attivitaSelezionata.equals("Scegli tipologia:"))
+                {
+                    imageButton.setClickable(false);
+
+                    //cambia l'immagine del bottone
+                    imageButton.setBackgroundResource(Color.TRANSPARENT);
+
+                    final TextView titoloChange =
+                            (TextView) getActivity().findViewById(R.id.titoloSceltaAttivita);
+                    titoloChange.setText("");
+
+                    final TextView descrizioneChange =
+                            (TextView) getActivity().findViewById(R.id.descrizioneSceltaAttivita);
+                    descrizioneChange.setText("");
+
+                    final TextView orarioChange =
+                            (TextView) getActivity().findViewById(R.id.orarioSceltaAttivita);
+                    orarioChange.setText("");
+
+                    final TextView indirizzoChange =
+                            (TextView) getActivity().findViewById(R.id.indirizzoSceltaAttivita);
+                    indirizzoChange.setText("");
+                }
 
                 if(attivitaSelezionata.equals("Gelateria"))
                 {
@@ -218,13 +243,15 @@ public class LocaliNegoziFragment extends Fragment {
                     fragment = new NegozioRistoranteFragment();
                 }
 
-                imageButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        FragmentManager fragmentManager = getFragmentManager();
-                        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
-                    }
-                });
+                if(fragment != null) {
+                    imageButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            FragmentManager fragmentManager = getFragmentManager();
+                            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("tag").commit();
+                        }
+                    });
+                }
             }
 
             @Override
@@ -250,7 +277,7 @@ public class LocaliNegoziFragment extends Fragment {
             case R.id.isUndo:
                 Fragment fragment = new HomeFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack("tag").commit();
 
                 return super.onOptionsItemSelected(item);
         }

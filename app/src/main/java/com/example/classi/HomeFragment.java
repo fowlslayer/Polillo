@@ -2,9 +2,11 @@ package com.example.classi;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -26,8 +28,10 @@ public class HomeFragment extends Fragment{
 
         setCustomTitle("Lissone Moderna");
 
+        setHasOptionsMenu(true);
+
         //settaggio bottoni
-        Button notizie_button = (Button) rootView.findViewById(R.id.buttonCronaca);
+        Button notizie_button = (Button) rootView.findViewById(R.id.buttonNewsCronaca);
         notizie_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +41,7 @@ public class HomeFragment extends Fragment{
             }
         });
 
-        Button bacheca_button = (Button) rootView.findViewById(R.id.buttonComunicati);
+        Button bacheca_button = (Button) rootView.findViewById(R.id.buttonNewsComunicati);
         bacheca_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,10 +85,43 @@ public class HomeFragment extends Fragment{
     return rootView;
     }
 
-     public void setCustomTitle(String title)
+    public void setCustomTitle(String title)
     {
         TextView textViewTitle = (TextView) getActivity().findViewById(R.id.mytext);
         textViewTitle.setText(title);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        if(getArguments() != null) {
+            String userName = getArguments().getString("userName");
+            if (userName != null)
+                inflater.inflate(R.menu.main, menu);
+            else
+                inflater.inflate(R.menu.menu_home_with_login, menu);
+        }
+        else
+            inflater.inflate(R.menu.menu_home_with_login, menu);
+
+        super.onCreateOptionsMenu(menu, inflater);
+
+    }
+
+    //inizializzo gestione dei click nel menu
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.isLogin:
+                Fragment fragment = new LoginFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
+
+
+                return super.onOptionsItemSelected(item);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

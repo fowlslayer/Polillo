@@ -21,6 +21,8 @@ public class ProfiloFragment extends Fragment {
 
 		View rootView = inflater.inflate(R.layout.fragment_profilo, container, false);
 
+        setCustomTitle("Profilo");
+
         String userName = getArguments().getString("userName");
 
 
@@ -48,32 +50,11 @@ public class ProfiloFragment extends Fragment {
         telephoneChange.setText(storedTelephone);
 
 
-
-        Button aggiungiAttivita = (Button)rootView.findViewById(R.id.buttonAggiungiAttivitá);
-        aggiungiAttivita.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment fragment = new AggiungiAttivita();
-                FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
-            }
-        });
-
         Button mieAttivita = (Button)rootView.findViewById(R.id.buttonMieAttivita);
         mieAttivita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Fragment fragment = new MieAttivitaFragment();
-                FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
-            }
-        });
-
-        Button aggiungiAnnuncio = (Button)rootView.findViewById(R.id.buttonAggiungiAnnuncio);
-        aggiungiAnnuncio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment fragment = new AggiungiAnnuncio();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }
@@ -100,5 +81,11 @@ public class ProfiloFragment extends Fragment {
         super.onDestroy();
         // Close The Database
         loginDataBaseAdapter.close();
+    }
+
+    public void setCustomTitle(String title)
+    {
+        TextView textViewTitle = (TextView) getActivity().findViewById(R.id.mytext);
+        textViewTitle.setText(title);
     }
 }

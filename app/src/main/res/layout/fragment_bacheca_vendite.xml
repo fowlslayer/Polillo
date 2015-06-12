@@ -1,17 +1,21 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.classi.MieAttivitaFragment"
-    android:weightSum="1">
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="168dp"
         android:layout_height="match_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
 
         <Button
             android:layout_width="150dp"
@@ -39,6 +43,18 @@
             android:onClick="buttonOnClick"
             android:gravity="bottom"
             android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/button"
+            android:background="@drawable/annuncio_playstation"
+            android:onClick="buttonOnClick"
+            android:gravity="bottom"
+            android:layout_below="@+id/textView37"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -46,7 +62,10 @@
         android:layout_width="198dp"
         android:layout_height="match_parent"
         android:weightSum="1"
-        android:id="@+id/textView37">
+        android:id="@+id/textView37"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -166,6 +185,46 @@
             android:layout_weight="0.73">
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PLAY STATION"
+            android:id="@+id/textView38"
+            android:textSize="23dp"
+            android:layout_marginTop="0dp" />
     </LinearLayout>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="console da gioco utilizzata pochissimo"
+            android:id="@+id/textView39"
+            android:layout_below="@+id/textView37"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="150"
+            android:id="@+id/textView40"
+            android:layout_below="@+id/textView39"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Norberto"
+            android:id="@+id/textView41"
+            android:layout_below="@+id/textView40"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout" />
+
+    </RelativeLayout>
+</ScrollView>

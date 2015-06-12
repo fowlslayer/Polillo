@@ -5,226 +5,229 @@
     android:layout_height="wrap_content"
     android:background="#ffffffff">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffffff">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="168dp"
-        android:layout_height="match_parent"
-        android:weightSum="1"
-        android:id="@+id/linearLayout">
-
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/buttonOggettoChitarra"
-            android:background="@drawable/annuncio_chitarra"
-            android:onClick="buttonOnClick"
-            android:gravity="top" />
-
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/buttonOggettoDivano"
-            android:background="@drawable/annuncio_divano"
-            android:onClick="buttonOnClick"
-            android:layout_gravity="bottom"
-            android:gravity="bottom"
-            android:layout_marginTop="15dp" />
-
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/buttonOggettoMobile"
-            android:background="@drawable/annuncio_mobileantico"
-            android:onClick="buttonOnClick"
-            android:gravity="bottom"
-            android:layout_marginTop="15dp" />
-
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/button"
-            android:background="@drawable/annuncio_playstation"
-            android:onClick="buttonOnClick"
-            android:gravity="bottom"
-            android:layout_below="@+id/textView37"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="15dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="198dp"
-        android:layout_height="match_parent"
-        android:weightSum="1"
-        android:id="@+id/textView37"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="CHITARRA"
-            android:id="@+id/textView7"
-            android:textSize="23dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="oggetto seminuovo usato di rado vendo       per mancato utilizzo"
-            android:id="@+id/textView9" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_margin="5dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="50 euro"
-            android:id="@+id/textView10" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/buttonOggettoChitarra"
+                android:background="@drawable/annuncio_chitarra"
+                android:onClick="buttonOnClick"
+                android:gravity="top"
+                android:layout_gravity="left|center_vertical" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="334-1634367"
-            android:id="@+id/textView11" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_gravity="right|center_vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Giuseppe"
-            android:id="@+id/textView12" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="CHITARRA"
+                    android:id="@+id/textView42"
+                    android:textSize="23dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="DIVANO"
-            android:id="@+id/textView17"
-            android:textSize="23dp"
-            android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="oggetto seminuovo usato di rado vendo       per mancato utilizzo"
+                    android:id="@+id/textView42" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="divano due sedute realizato da artigiano"
-            android:id="@+id/textView18" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Giuseppe"
+                    android:id="@+id/textView42" />
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="250 euro"
-            android:id="@+id/textView19" />
+        </FrameLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="349-26673690"
-            android:id="@+id/textView20" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView21"
-            android:text="Nicolo&apos;" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="MOBILE ANITCO"
-            android:id="@+id/textView15"
-            android:textSize="23dp"
-            android:layout_marginTop="30dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="mobile da soggiorno perfetto per stile retrò"
-            android:id="@+id/textView16" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="250 euro"
-            android:id="@+id/textView34" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="349-23141208"
-            android:id="@+id/textView36" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Alberto"
-            android:id="@+id/textView35" />
-
-        <LinearLayout
-            android:orientation="vertical"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:layout_weight="0.73">
+            android:layout_height="150dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
 
-        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_gravity="right|center_vertical" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="PLAY STATION"
-            android:id="@+id/textView38"
-            android:textSize="23dp"
-            android:layout_marginTop="0dp" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="DIVANO"
+                    android:id="@+id/textView43"
+                    android:textSize="23dp"
+                    android:layout_marginTop="10dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="console da gioco utilizzata pochissimo"
-            android:id="@+id/textView39"
-            android:layout_below="@+id/textView37"
-            android:layout_toRightOf="@+id/linearLayout"
-            android:layout_toEndOf="@+id/linearLayout" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="divano due sedute realizato da artigiano"
+                    android:id="@+id/textView43" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="150"
-            android:id="@+id/textView40"
-            android:layout_below="@+id/textView39"
-            android:layout_toRightOf="@+id/linearLayout"
-            android:layout_toEndOf="@+id/linearLayout" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView43"
+                    android:text="Nicolo&apos;" />
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Norberto"
-            android:id="@+id/textView41"
-            android:layout_below="@+id/textView40"
-            android:layout_toRightOf="@+id/linearLayout"
-            android:layout_toEndOf="@+id/linearLayout" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/buttonOggettoDivano"
+                android:background="@drawable/annuncio_divano"
+                android:onClick="buttonOnClick"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="bottom"
+                android:layout_marginTop="15dp" />
+        </FrameLayout>
 
-    </RelativeLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="310dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/buttonOggettoMobile"
+                android:background="@drawable/annuncio_mobileantico"
+                android:onClick="buttonOnClick"
+                android:gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left|center_vertical" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_gravity="right|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="MOBILE ANITCO"
+                    android:id="@+id/textView44"
+                    android:textSize="23dp"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="mobile da soggiorno perfetto per stile retrò"
+                    android:id="@+id/textView44" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Alberto"
+                    android:id="@+id/textView44" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView44" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="465dp" >
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/buttonOggettoPlaystation"
+                android:background="@drawable/annuncio_playstation"
+                android:onClick="buttonOnClick"
+                android:gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left|center_vertical" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_gravity="right|center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="PLAY STATION"
+                    android:id="@+id/textView45"
+                    android:textSize="23dp"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="console da gioco utilizzata pochissimo"
+                    android:id="@+id/textView45"
+                    android:layout_below="@+id/textView37"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:layout_toEndOf="@+id/linearLayout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="150"
+                    android:id="@+id/textView45"
+                    android:layout_below="@+id/textView39"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:layout_toEndOf="@+id/linearLayout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Norberto"
+                    android:id="@+id/textView45"
+                    android:layout_below="@+id/textView40"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:layout_toEndOf="@+id/linearLayout" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
 </ScrollView>

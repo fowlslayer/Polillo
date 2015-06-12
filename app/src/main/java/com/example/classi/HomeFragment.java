@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment{
         notizie_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragment = new NotizieFragment();
+                fragment = new NotizieHomeFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
             }

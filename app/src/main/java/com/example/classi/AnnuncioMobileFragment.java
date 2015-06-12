@@ -19,7 +19,7 @@ public class AnnuncioMobileFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_annuncio_chitarra, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_annuncio_mobile_antico, container, false);
 
         setCustomTitle("Mobile Antico");
         setHasOptionsMenu(true);

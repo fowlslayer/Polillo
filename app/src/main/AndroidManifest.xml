@@ -53,7 +53,6 @@
 =======
 		<activity android:name=".Web" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
 
-        <activity android:name=".Cronaca" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
         <activity android:name=".Comunicati" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
         <activity android:name=".Sport" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>
         <activity android:name=".News" android:configChanges="keyboardHidden|orientation" android:screenOrientation="portrait"/>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="642dp"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="126.7dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|top" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="News"
+                    android:id="@+id/buttonSportNews"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ffffffff"
+                    android:textColor="@android:color/holo_blue_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="127.7dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left|top">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cronaca"
+                    android:id="@+id/buttonSportCronaca"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/holo_blue_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="126.7dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|top">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Economia"
+                    android:id="@+id/buttonSportEconomia"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/holo_blue_light" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@android:color/white"
+                android:layout_marginTop="35dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="center"
+                    android:background="@drawable/notizia_sport_prima" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:layout_marginTop="-80dp">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton2"
+                    android:layout_gravity="top|center"
+                    android:background="@drawable/notizia_sport_seconda" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/white"
+                android:layout_marginTop="60dp" >
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton3"
+                    android:layout_gravity="top|center"
+                    android:background="@drawable/notizia_sport_terza" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:layout_marginTop="470dp" >
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton4"
+                    android:background="@drawable/notizia_sport_quarta" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+</ScrollView>

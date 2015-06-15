@@ -1,10 +1,11 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.classi.AggiungiAnnuncio">
+    tools:context="com.example.classi.AggiungiAnnuncio"
+    android:background="#00ff8d53">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
@@ -26,58 +27,69 @@
             android:layout_alignParentStart="true" />
 
         <EditText
-            android:id="@+id/titoloAnnuncio"
+            android:id="@+id/nomeAnnuncio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Titolo Annuncio"
             android:textSize="25dp"
+            android:singleLine="true"
+            android:layout_below="@+id/textView8"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView8"
-            android:singleLine="true"/>
+            android:layout_marginTop="27dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Salva Annuncio"
             android:id="@+id/btnAggiungiAnnuncio"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true" />
 
         <EditText
-            android:id="@+id/descrizione"
+            android:id="@+id/descrizioneAnnuncio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Descrizione"
             android:textSize="25dp"
-            android:layout_below="@+id/titoloAnnuncio"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:singleLine="true"/>
+            android:singleLine="true"
+            android:layout_below="@+id/prezzoAnnuncio"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <EditText
-            android:id="@+id/textView11"
+            android:id="@+id/prezzoAnnuncio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Prezzo Vendita"
             android:textSize="25dp"
-            android:layout_above="@+id/btnAggiungiAnnuncio"
+            android:singleLine="true"
+            android:layout_below="@+id/recapitoAnnuncio"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="25dp"
-            android:singleLine="true"/>
+            android:layout_alignParentEnd="true" />
 
         <EditText
-            android:id="@+id/textView10"
+            android:id="@+id/recapitoAnnuncio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Recapito"
             android:textSize="25dp"
-            android:layout_above="@+id/textView11"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:singleLine="true"/>
+            android:singleLine="true"
+            android:layout_below="@+id/nomeAnnuncio"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView4"
+            android:layout_below="@+id/descrizioneAnnuncio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/annuncio_aggiungi_foto" />
 
     </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>

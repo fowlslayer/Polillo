@@ -23,7 +23,12 @@ public class MieAttivitaFragment extends Fragment {
 
         setCustomTitle("Le mie Attivita'");
 
-        Button attivita = (Button)rootView.findViewById(R.id.unAttivita);
+        setHasOptionsMenu(true);
+
+        Button attivita = (Button)rootView.findViewById(R.id.buttonUnAttivita);
+        Button newAttivita = (Button)rootView.findViewById(R.id.buttonNewAttivita);
+
+
         attivita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +40,18 @@ public class MieAttivitaFragment extends Fragment {
                //startActivity(logIn);
             }
         });
+
+        newAttivita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new AggiungiAttivita();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
+                //Intent logIn = new Intent(getActivity(), AttivitaActivity.class);
+
+                //startActivity(logIn);
+            }
+        });
         return rootView;
 
     }
@@ -44,6 +61,29 @@ public class MieAttivitaFragment extends Fragment {
     {
         TextView textViewTitle = (TextView) getActivity().findViewById(R.id.mytext);
         textViewTitle.setText(title);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        inflater.inflate(R.menu.menu_undo, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+
+    }
+
+    //inizializzo gestione dei click nel menu
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.isUndo:
+                Fragment fragment = new ProfiloFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+                return super.onOptionsItemSelected(item);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

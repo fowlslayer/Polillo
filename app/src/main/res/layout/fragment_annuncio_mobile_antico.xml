@@ -14,7 +14,7 @@ android:background="#ffffffff">
 
 
     <TextView
-        android:id="@+id/titoloAnnuncio"
+        android:id="@+id/nomeAnnuncio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -25,17 +25,17 @@ android:background="#ffffffff">
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/descrizione"
+        android:id="@+id/descrizioneAnnuncio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:text="mobile da soggiorno perfetto per stile retrò, condizioni ottime, ristrutturato da meno di un anno"
-        android:layout_below="@+id/titoloAnnuncio"
+        android:layout_below="@+id/nomeAnnuncio"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/prezzoAnnuncio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
@@ -45,7 +45,7 @@ android:background="#ffffffff">
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/recapitoAnnuncio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
@@ -70,7 +70,7 @@ android:background="#ffffffff">
         android:textSize="20dp"
         android:text="Prezzo:"
         android:textColor="#5426184e"
-        android:layout_below="@+id/descrizione"
+        android:layout_below="@+id/descrizioneAnnuncio"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -81,7 +81,7 @@ android:background="#ffffffff">
         android:textSize="20dp"
         android:text="Telefono:"
         android:textColor="#5426184e"
-        android:layout_below="@+id/textView11"
+        android:layout_below="@+id/prezzoAnnuncio"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

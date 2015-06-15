@@ -39,7 +39,6 @@ public class RegistrazioneFragment extends FragmentActivity
         editTextNome=(EditText)findViewById(R.id.editNome);
         editTextCognome=(EditText)findViewById(R.id.editCognome);
         editTextTelefono=(EditText)findViewById(R.id.editTelefono);
-
         editTextPassword=(EditText)findViewById(R.id.editTextPassword);
         editTextConfirmPassword=(EditText)findViewById(R.id.editTextConfirmPassword);
 
@@ -54,11 +53,10 @@ public class RegistrazioneFragment extends FragmentActivity
                 String userName=editTextUserName.getText().toString();
                 String password=editTextPassword.getText().toString();
 
-                //trasformo i miei dati in stringhe per verificare se sono inserito nel format
+                //trasformo i miei dati in stringhe per verificare se sono inserite nel format
                 String nome=editTextNome.getText().toString();
                 String cognome=editTextCognome.getText().toString();
                 String telefono=editTextTelefono.getText().toString();
-
                 String confirmPassword=editTextConfirmPassword.getText().toString();
 
                 // check if any of the fields are vaccant

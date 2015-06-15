@@ -76,7 +76,7 @@
         android:id="@+id/buttonAggiungiAttivitá"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Create Account"
+        android:text="Crea Account"
         android:layout_marginBottom="60dp" />
 
 </LinearLayout>

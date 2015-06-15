@@ -44,7 +44,7 @@ public class ComunePageFragment extends Fragment {
             case R.id.isUndo:
                 Fragment fragment = new HomeFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack( "tag" ).commit();
+                fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
                 return super.onOptionsItemSelected(item);
         }
